@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", sans-serif;
+  --font-mono: "Inter", monospace;
+
+  --color-surface: #111318;
+  --color-surface-dim: #111318;
+  --color-surface-bright: #37393e;
+  --color-surface-container-lowest: #0c0e12;
+  --color-surface-container-low: #1a1c20;
+  --color-surface-container: #1e2024;
+  --color-surface-container-high: #282a2e;
+  --color-surface-container-highest: #333539;
+  --color-on-surface: #e2e2e8;
+  --color-on-surface-variant: #e2bfb0;
+  --color-outline: #a98a7d;
+  --color-outline-variant: #5a4136;
+  --color-primary: #ffb694;
+  --color-on-primary: #571f00;
+  --color-primary-container: #ff6a00;
+  --color-on-primary-container: #571f00;
+  --color-secondary: #c3fffa;
+  --color-on-secondary: #003735;
+  --color-secondary-container: #00f0e8;
+  --color-on-secondary-container: #006965;
+  --color-tertiary: #adc6ff;
+  --color-on-tertiary: #002e69;
+  --color-tertiary-container: #5c97ff;
+  --color-on-tertiary-container: #002f69;
+
+  --radius-xl: 1.5rem;
+  --radius-lg: 1rem;
+  --radius-md: 0.75rem;
+
+  --spacing-container-max: 1440px;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-container-lowest text-on-surface font-sans antialiased;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface-container/60 backdrop-blur-xl border border-white/10 relative overflow-hidden;
+  }
+
+  .glow-button-primary {
+    @apply bg-primary-container text-white px-6 py-2 rounded-md font-display font-bold uppercase tracking-wider transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,106,0,0.5)] hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  .glow-text-secondary {
+    @apply text-secondary-container drop-shadow-[0_0_10px_rgba(0,240,232,0.5)];
+  }
+
+  .inner-border {
+    @apply border border-transparent;
+    background: linear-gradient(var(--color-surface-container), var(--color-surface-container)) padding-box,
+                linear-gradient(to bottom right, rgba(255,255,255,0.1), rgba(255,255,255,0.02)) border-box;
+  }
+}
