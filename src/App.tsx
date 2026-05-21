@@ -664,44 +664,13 @@ export default function App() {
             </div>
           </div>
 
-          {/* Card 2: Video AI */}
-          <div className="glass-card rounded-[24px] p-5 border-[#FF6A00]/20 flex flex-col h-full hover:scale-[1.02] hover:border-[#FF6A00]/40 transition-all duration-300 group">
-            <div className="aspect-video w-full rounded-xl overflow-hidden bg-black/40 border border-[#FF6A00]/10 mb-4 shadow-md relative">
-              <iframe
-                id="yt-video-videoai"
-                className="w-full h-full absolute inset-0"
-                src="https://www.youtube.com/embed/yYAaxmbgItA"
-                title="Giới thiệu tính năng phần mềm VIDEO AI"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-            
-            <div className="flex-1 flex flex-col justify-between">
-              <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="w-2 h-2 rounded-full bg-[#FF6A00] shadow-[0_0_8px_#FF6A00]" />
-                  <span className="font-mono text-[9px] text-[#FF6A00] font-bold uppercase tracking-widest">SẢN XUẤT HÀNG LOẠT</span>
-                </div>
-                <h3 className="font-display text-lg font-black text-on-surface mb-2.5 group-hover:text-[#FF6A00] transition-colors">PHẦN MỀM VIDEO AI</h3>
-                
-                {/* Note box */}
-                <div className="p-3.5 bg-surface-container-low/40 rounded-xl border border-on-surface/5 font-sans text-xs text-on-surface-variant leading-relaxed">
-                  <span className="font-bold text-on-surface block mb-1">📌 Ghi chú nội dung:</span>
-                  Ứng dụng AI thông minh giúp render & sản xuất hàng loạt video ngắn tiếp thị từ nguồn Shopee, TikTok, YouTube. Tự chuyển đổi văn bản thành giọng nói lôi cuốn cùng phụ đề chuyên nghiệp tự động.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 3: MKT TikPro */}
+          {/* Card 2: MKT TikPro */}
           <div className="glass-card rounded-[24px] p-5 border-[#FE2C55]/20 flex flex-col h-full hover:scale-[1.02] hover:border-[#FE2C55]/40 transition-all duration-300 group">
             <div className="aspect-video w-full rounded-xl overflow-hidden bg-black/40 border border-[#FE2C55]/10 mb-4 shadow-md relative">
               <iframe
                 id="yt-video-tikpro"
                 className="w-full h-full absolute inset-0"
-                src="https://www.youtube.com/embed/WIZxVxFVdyw"
+                src="https://www.youtube.com/embed/yYAaxmbgItA"
                 title="Giới thiệu tính năng phần mềm MKT TikPro"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -724,6 +693,37 @@ export default function App() {
                 <div className="p-3.5 bg-surface-container-low/40 rounded-xl border border-on-surface/5 font-sans text-xs text-on-surface-variant leading-relaxed">
                   <span className="font-bold text-on-surface block mb-1">📌 Ghi chú nội dung:</span>
                   Xây dựng & nuôi dưỡng trang trại hàng nghìn tài khoản TikTok Trust cực nhanh. Tự đăng video gắn giỏ hàng mượt mà, seeding đẩy tương tác tự động kéo triệu mắt xem đẩy doanh số vượt trội.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3: Video AI */}
+          <div className="glass-card rounded-[24px] p-5 border-[#FF6A00]/20 flex flex-col h-full hover:scale-[1.02] hover:border-[#FF6A00]/40 transition-all duration-300 group">
+            <div className="aspect-video w-full rounded-xl overflow-hidden bg-black/40 border border-[#FF6A00]/10 mb-4 shadow-md relative">
+              <iframe
+                id="yt-video-videoai"
+                className="w-full h-full absolute inset-0"
+                src="https://www.youtube.com/embed/WIZxVxFVdyw"
+                title="Giới thiệu tính năng phần mềm VIDEO AI"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            
+            <div className="flex-1 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="w-2 h-2 rounded-full bg-[#FF6A00] shadow-[0_0_8px_#FF6A00]" />
+                  <span className="font-mono text-[9px] text-[#FF6A00] font-bold uppercase tracking-widest">SẢN XUẤT HÀNG LOẠT</span>
+                </div>
+                <h3 className="font-display text-lg font-black text-on-surface mb-2.5 group-hover:text-[#FF6A00] transition-colors">PHẦN MỀM VIDEO AI</h3>
+                
+                {/* Note box */}
+                <div className="p-3.5 bg-surface-container-low/40 rounded-xl border border-on-surface/5 font-sans text-xs text-on-surface-variant leading-relaxed">
+                  <span className="font-bold text-on-surface block mb-1">📌 Ghi chú nội dung:</span>
+                  Ứng dụng AI thông minh giúp render & sản xuất hàng loạt video ngắn tiếp thị từ nguồn Shopee, TikTok, YouTube. Tự chuyển đổi văn bản thành giọng nói lôi cuốn cùng phụ đề chuyên nghiệp tự động.
                 </div>
               </div>
             </div>
