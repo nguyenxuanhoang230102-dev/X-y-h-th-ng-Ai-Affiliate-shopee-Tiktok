@@ -772,8 +772,13 @@ export default function App() {
               className="glass-card p-8 rounded-2xl border-l-[6px] border-l-secondary-container relative text-left"
             >
               <div className="flex items-center gap-5 mb-6">
-                <div className="w-14 h-14 rounded-full bg-surface-bright flex items-center justify-center border border-on-surface/10">
-                  <User className="w-8 h-8 text-on-surface-variant" />
+                <div className="w-14 h-14 rounded-full bg-surface-bright overflow-hidden border border-on-surface/10 shrink-0">
+                  <img 
+                    src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&h=150&q=80" 
+                    alt="Hoàng Minhh avatar"
+                    className="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
+                  />
                 </div>
                 <div>
                   <div className="font-display text-xl font-bold text-on-surface">Hoàng Minhh</div>
@@ -791,8 +796,13 @@ export default function App() {
 
             <div className="glass-card p-8 rounded-2xl border-l-[6px] border-l-primary-container relative text-left">
               <div className="flex items-center gap-5 mb-6">
-                <div className="w-14 h-14 rounded-full bg-surface-bright flex items-center justify-center border border-on-surface/10">
-                  <User className="w-8 h-8 text-on-surface-variant" />
+                <div className="w-14 h-14 rounded-full bg-surface-bright overflow-hidden border border-on-surface/10 shrink-0">
+                  <img 
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&h=150&q=80" 
+                    alt="Thảo Vy Store avatar"
+                    className="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
+                  />
                 </div>
                 <div>
                   <div className="font-display text-xl font-bold text-on-surface">Thảo Vy Store</div>
